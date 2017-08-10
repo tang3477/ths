@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>定义input type="file" 的样式</title>
+
+</head>
+<body>
+<div  enctype="multipart/form-data" >
+        <input type="file" name="fileName" id="file"/>
+<!--        <input type="submit" name="上传" />-->
+				<button onclick="submit()">上传</button>
+</div>
+</body>
+<script>
+	function submit(){
+		var doc=document.getElementById("file")
+		arr=doc.value.split("\\");
+		console.log(arr[arr.length-1])
+		
+	}
+</script>
+</html>
